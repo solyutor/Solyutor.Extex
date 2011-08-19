@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Solyutor.Extex.DateTimeExt
+namespace Solyutor.Extex.RuDates
 {
     public static class DateTimeExtensions
     {
