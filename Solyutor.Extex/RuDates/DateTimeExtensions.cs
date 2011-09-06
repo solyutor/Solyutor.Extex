@@ -39,7 +39,7 @@ namespace Solyutor.Extex.RuDates
             return new DateTime(year, 7, day);
         }
 
-        public static DateTime AugAugust(this int day, int year)
+        public static DateTime August(this int day, int year)
         {
             return new DateTime(year, 8, day);
         }
