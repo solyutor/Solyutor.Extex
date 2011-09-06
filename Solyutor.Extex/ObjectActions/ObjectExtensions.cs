@@ -11,7 +11,7 @@ namespace Solyutor.Extex.ObjectActions
 
         public static bool IsNotNull(this object self)
         {
-            return ReferenceEquals(self, null);
+            return !ReferenceEquals(self, null);
         }
 
         public static void DoIfNull(this object self, Action action)
@@ -30,6 +30,11 @@ namespace Solyutor.Extex.ObjectActions
         {
             if (self.IsNull()) return;
             action(self);
+        }
+
+        public static TTarget CastTo<TTarget>(this object self)
+        {   
+            return (TTarget) self;
         }
     }
 }

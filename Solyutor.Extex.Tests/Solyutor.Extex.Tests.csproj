@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FluentStrings\StringExtensionsFixture.cs" />
+    <Compile Include="ObjectActions\ObjectExtensionsFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RuDates\DateTimeExtensionsFixture.cs" />
   </ItemGroup>
