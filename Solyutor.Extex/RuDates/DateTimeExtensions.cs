@@ -63,5 +63,25 @@ namespace Solyutor.Extex.RuDates
         {
             return new DateTime(year, 12, day);
         }
+
+        public static TimeSpan Seconds(this int self)
+        {
+            return TimeSpan.FromSeconds(self);
+        }
+        
+        public static TimeSpan Minutes(this int self)
+        {
+            return TimeSpan.FromMinutes(self);
+        }
+        
+        public static TimeSpan Hours(this int self)
+        {
+            return TimeSpan.FromHours(self);
+        }        
+        
+        public static TimeSpan Days(this int self)
+        {
+            return TimeSpan.FromDays(self);
+        }        
     }
 }
