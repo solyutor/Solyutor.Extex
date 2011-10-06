@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 task :default => [:build, :unittests] do
 end
 
@@ -9,3 +10,6 @@ end
 task :unittests do
   sh "Packages/NUnit.2.5.10.11092/tools/nunit-console.exe  Solyutor.Extex.Tests/bin/Debug/Solyutor.Extex.Tests.dll"
 end
+=======
+//
+>>>>>>> 96b50973934f2f19dbed178a36e4c23033ccf736
