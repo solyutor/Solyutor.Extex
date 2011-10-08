@@ -9,6 +9,7 @@ msbuild :build do |msb|
   msb.properties :configuration => :release
 end
 
-task :unittests do
-  sh "Packages/NUnit.2.5.10.11092/tools/nunit-console.exe  Solyutor.Extex.Tests/bin/Debug/Solyutor.Extex.Tests.dll"
+nunit :unittests do |nunit|
+  nunit.command = "Packages/NUnit.2.5.10.11092/tools/nunit-console.exe"
+  nunit.assemblies "Solyutor.Extex.Tests/bin/Debug/Solyutor.Extex.Tests.dll"
 end
