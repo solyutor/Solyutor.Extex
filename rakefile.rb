@@ -4,7 +4,7 @@ task :default => [:build, :unittests] do
 end
 
 msbuild :build do |msb|
-  msb.solution = "SolYUtor.Extex.sln"
+  msb.solution = "Solyutor.Extex.sln"
   msb.targets :clean, :build
   msb.properties :configuration => :release
 end
